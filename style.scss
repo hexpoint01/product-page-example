@@ -1,0 +1,222 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+$color1: #2a2541;
+$color2: #12274d;
+$color3: #3e60b4;
+$color4: #7da3fd;
+$color5: #e3e3e3;
+$product: #e3e3e3;
+$backgr: #222831;
+
+/* BTN CSS */
+.btn{
+    background-color: $color5;
+    color: $color1;
+    outline: none;
+    border: 1px solid $color1 0.4;
+    border-radius: 3px;
+    height: 35px;
+    width: 110px;
+    text-decoration: underline;
+    text-decoration-color: #12274d ;
+
+}
+.btn:hover{
+    background-color: $color1;
+    color: $color5;
+    text-decoration: none;
+}
+.btn:active{
+    color: rgb(129, 231, 129);
+}
+/* BTN CSS END */
+
+/* Nav Menü Start */
+.nav-bar-menü {
+    width: 1450px;
+    height: 60px;
+    background-color: $color5;
+    margin: auto;
+    margin-top: 30px;
+    backdrop-filter: blur(200px);
+    border: 1px;
+    border-radius: 10px;
+
+
+    .header {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+
+        .logo {
+            position: absolute;
+            left: 50px;
+            z-index: 1;
+
+            a {
+                img {
+                    width: 50px;
+                    height: 50px;
+                    color: wheat;
+
+                }
+            }
+        }
+
+        .search-text {
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            left: 100px;
+
+            .search-textbox {
+                width: 600px;
+                height: 25px;
+                border: 1px solid $color4;
+                border-radius: 4px;
+                
+            }
+        }
+
+        .search-textbox:focus {
+            outline: none;
+
+        }
+
+        .visior {
+            width: 400px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 25px;
+            position: relative;
+            left: 200px;
+        }
+
+    }
+}
+/* Nav Menü End */
+
+/* Nav two Menü Start */
+.two-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    .nav-header{
+        display: flex;
+        position: relative;
+        width: 1050px;
+        height: 30px;
+        background-color: $color5;
+        justify-content: center;
+        align-items: center;
+        column-gap: 30px;
+        text-decoration: none;
+        border-radius: 10px;
+        .left-btn{
+            position: absolute;
+            left: 30px;
+            align-items: center;
+            justify-content: left;
+        }
+        .right-btn{
+            position: absolute;
+            right:30px;
+            align-items: center;
+            justify-content: left;
+        }
+        .nav-two-text{
+            text-decoration: none;
+            color: $color1;
+            .fa-house{
+                color: rgb(251, 127, 127);
+            }
+        }
+    }
+}
+/* Nav two Menü End */
+
+.full-product-page{
+    display: grid;
+    grid-template-columns: 1fr 900px 1fr ;
+    column-gap: 6px;
+    height: calc(90vh - 100px);
+    margin: 25px 20px 0px 20px;
+
+    .left-feature-page{
+        position: inherit;
+        background-color: $product;
+        .left-fature{
+            display: flex;
+            flex-direction: column;
+            row-gap: 15px;
+            justify-content: left;
+            text-align:center;
+            .feature{
+                display: flex;
+                flex-direction: row;
+                margin-left: 10px;
+                margin-top: 10px;
+                column-gap: 3px;
+                .feature-title{
+                    font-weight: 800;
+                }
+            }
+        }
+    }
+    .center-product-foto-page{
+        background-color: $product;
+        .fotos{
+            position: inherit;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            .foto{
+                width: 880px;
+                height: 650px;
+                margin-top: 30px;
+                background-color: red;
+                border-radius: 20px;
+                .mySlides{
+                    width: 880px;
+                    height: 650px;
+                    object-fit: cover;
+                    border-radius: 10px;
+                }
+            }
+            .foto-btn{
+                position: absolute;
+                display: flex;
+                .w3-display-left{
+                    position: inherit;
+                    left: -400px;
+                }
+                .w3-display-right{
+                    position: inherit;
+                    right:-400px;
+                }
+            }
+        }
+    }
+    .right-context-page{
+        background-color: $product;
+        .context{
+            margin-left: 10px;
+            margin-right: 10px;
+            .con-head{
+                font-weight: 800;
+            }
+        }
+    }
+}
