@@ -2,12 +2,12 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: white;
+  background-color: rgb(234, 231, 231);
 }
 
 /* BTN CSS */
 .btn {
-  background-color: #e3e3e3;
+  background-color: #e9e0e0;
   color: #2a2541;
   outline: none;
   border: 1px solid #2a2541 0.4;
@@ -20,7 +20,7 @@ body {
 
 .btn:hover {
   background-color: #2a2541;
-  color: #e3e3e3;
+  color: #e9e0e0;
   text-decoration: none;
 }
 
@@ -33,7 +33,7 @@ body {
 .nav-bar-menü {
   width: 1450px;
   height: 60px;
-  background-color: #e3e3e3;
+  background-color: #e9e0e0;
   margin: auto;
   margin-top: 30px;
   -webkit-backdrop-filter: blur(200px);
@@ -92,14 +92,13 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 10px;
 }
 .two-nav .nav-header {
   display: flex;
   position: relative;
   width: 1050px;
-  height: 30px;
-  background-color: #e3e3e3;
+  height: 40px;
+  background-color: #e9e0e0;
   justify-content: center;
   align-items: center;
   -moz-column-gap: 30px;
@@ -138,7 +137,7 @@ body {
 }
 .full-product-page .left-feature-page {
   position: inherit;
-  background-color: #e3e3e3;
+  background-color: #e9e0e0;
 }
 .full-product-page .left-feature-page .left-fature {
   display: flex;
@@ -157,9 +156,6 @@ body {
 }
 .full-product-page .left-feature-page .left-fature .feature .feature-title {
   font-weight: 800;
-}
-.full-product-page .center-product-foto-page {
-  background-color: #e3e3e3;
 }
 .full-product-page .center-product-foto-page .fotos {
   position: inherit;
@@ -196,7 +192,7 @@ body {
   right: -400px;
 }
 .full-product-page .right-context-page {
-  background-color: #e3e3e3;
+  background-color: #e9e0e0;
 }
 .full-product-page .right-context-page .context {
   margin-left: 10px;
